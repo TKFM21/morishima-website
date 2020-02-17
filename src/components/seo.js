@@ -37,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
         },
         {
           property: `og:title`,
@@ -52,12 +52,24 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: `https://morishima1.com/`,
+        },
+        {
+          property: `og:description`,
+          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
+        },
+        {
+          property: `og:image`,
+          content: `https://morishima.s3-ap-northeast-1.amazonaws.com/B2C94ADF-C8F3-44A4-92C6-7693EA6E4785_1_105_c.jpeg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: `@morishima1_2020`,
         },
         {
           name: `twitter:title`,
@@ -65,7 +77,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
         },
         {
           name: `google-site-verification`,

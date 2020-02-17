@@ -11,7 +11,7 @@ import Footer from "../components/footer"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="一棟貸切り宿もりしま 長野県上田市" />
       <section className="hero">
         <Img fluid={data.top.childImageSharp.fluid} className="hero-image" />
       </section>
