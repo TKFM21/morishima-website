@@ -61,7 +61,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://morishima.s3-ap-northeast-1.amazonaws.com/B2C94ADF-C8F3-44A4-92C6-7693EA6E4785_1_105_c.jpeg`,
+          content: `https://www.morishima1.com/static/3ab0f1742913ebaa6fbd7c5e662eade2/d8255/top-morishima.jpg`,
         },
         {
           name: `twitter:card`,
