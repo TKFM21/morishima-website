@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
+          content: `長野県上田市：一棟貸切り宿もりしま。一泊一組限定。キッチン有り。庭にコンロがあるのでBBQも可能。宿泊以外のご利用にも柔軟に対応できます。`,
         },
         {
           property: `og:image`,

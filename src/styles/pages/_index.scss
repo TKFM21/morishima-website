@@ -12,6 +12,10 @@ main {
   }
 }
 
+h1 {
+  display: none;
+}
+
 h2 {
   @media screen and (min-width: 1024px) {
     font-size: $xl-size;

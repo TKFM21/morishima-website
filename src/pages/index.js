@@ -16,7 +16,10 @@ const IndexPage = ({ data }) => {
         <Img fluid={data.top.childImageSharp.fluid} className="hero-image" />
       </section>
       <section className="container">
+        <h1 className="title">一棟貸し宿もりしま長野県上田市</h1>
         <span className="description">
+          長野県上田市武石
+          <br />
           一泊一組限定
           <br />
           一棟貸切りの宿
