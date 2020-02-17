@@ -6,9 +6,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Cafe`,
-    description: `  `,
-    author: `Cristiano Crolla`,
+    title: `一棟貸しの宿 『もりしま』`,
+    description: `一泊一組限定、一棟貸し切りで宿泊ができます。`,
+    author: `もりしま`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,14 +30,14 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mount-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `kelvinpocketcafe`, // Your Instagram
+        username: `yado.morishima`, // Your Instagram
       },
     },
     {
