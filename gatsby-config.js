@@ -1,14 +1,8 @@
-const dotenv = require('dotenv')
-
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
+const config = require('./config/site')
 
 module.exports = {
   siteMetadata: {
-    title: `一棟貸しの宿 『もりしま』`,
-    description: `一泊一組限定、一棟貸し切りで宿泊ができます。`,
-    author: `もりしま`,
+    ...config
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,18 +15,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/mount-icon.png`, // This path is relative to the root of the site.
-      },
-    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-instagram`,
@@ -40,20 +22,28 @@ module.exports = {
         username: `yado.morishima`, // Your Instagram
       },
     },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.title,
+        short_name: config.shortName,
+        descripthion: config.description,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: `standalone`,
+        // edit below
+        icon: config.favicon,
+        siteLanguage: config.siteLanguage,
+      },
+    },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-react-leaflet',
-      options: {
-        linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
-      }
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

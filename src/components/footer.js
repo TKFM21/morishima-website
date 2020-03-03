@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -22,16 +23,16 @@ const Footer = () => {
                 height="36"
                 border="0"
                 src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                alt="一棟貸切りの宿 もりしま 長野県上田市 LINE公式アカウント"
               />
             </a>
           </span>
         </div>
       </section>
       <p>
-        Copyright &copy; 2020 
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          ITサポート aim
-        </a>
+        Copyright &copy; {new Date().getFullYear()}
+        {` `}
+        <Link to={`/`}>一棟貸しの宿 もりしま</Link>
       </p>
     </footer>
   )

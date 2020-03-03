@@ -1,53 +1,49 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image';
-
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const Instagram = () => {
   const data = useStaticQuery(graphql`
-  query {
-    allInstaNode(
-      limit:6,
-      sort: {
-        fields: [timestamp]
-        order: [DESC]
-      }
-    ) {
-      edges {
-        node {
-          id
-          mediaType
-          preview
-          original
-          timestamp
-          localFile {
-            childImageSharp {
-              fixed(width: 280, height: 280) {
-                ...GatsbyImageSharpFixed
+    query {
+      allInstaNode(limit: 6, sort: { fields: [timestamp], order: [DESC] }) {
+        edges {
+          node {
+            id
+            mediaType
+            preview
+            original
+            timestamp
+            localFile {
+              childImageSharp {
+                fixed(width: 280, height: 280) {
+                  ...GatsbyImageSharpFixed
+                }
               }
             }
           }
         }
       }
     }
-  }
   `)
-  const instaPosts = data.allInstaNode.edges;
+  const instaPosts = data.allInstaNode.edges
   return (
     <div className="insta">
       <h2>INSTAGRAM</h2>
       <span>@yado.morishima</span>
       <ul className="insta-posts">
-          {instaPosts.map(({ node }) => {
-            return (
-              <li key={node.id} className="insta-post">
-                <Img fixed={node.localFile.childImageSharp.fixed} />
-              </li>
-            )
-          })}
+        {instaPosts.map(({ node }) => {
+          return (
+            <li key={node.id} className="insta-post">
+              <Img
+                fixed={node.localFile.childImageSharp.fixed}
+                alt="一棟貸切りの宿 もりしま 長野県上田市 インスタ"
+              />
+            </li>
+          )
+        })}
       </ul>
     </div>
   )
 }
 
-export default Instagram;
+export default Instagram

@@ -10,38 +10,69 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
             author
+            backgroundColor
+            description
+            favicon
+            pathPrefix
+            shortName
+            siteLanguage
+            siteUrl
+            themeColor
+            title
+            titleAlt
+            url
           }
         }
       }
     `
   )
 
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
+  const metaSiteLanguage = site.siteMetadata.siteLanguage
+  const siteUrl = site.siteMetadata.siteUrl
+
+  let schemaOrgJSONLD = [
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "@id": siteUrl,
+      url: siteUrl,
+      name: site.siteMetadata.title,
+      alternateName: site.siteMetadata.titleAlt || "",
+    },
+  ]
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={metaTitle}
       titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
+          content: metaDescription,
+        },
+        {
+          name: `apple-mobile-web-app-title`,
+          content: site.siteMetadata.shortName,
+        },
+        {
+          name: `application-name`,
+          content: site.siteMetadata.shortName,
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -53,11 +84,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: `https://morishima1.com/`,
-        },
-        {
-          property: `og:description`,
-          content: `長野県上田市：一棟貸切り宿もりしま。一泊一組限定。キッチン有り。庭にコンロがあるのでBBQも可能。宿泊以外のご利用にも柔軟に対応できます。`,
+          content: siteUrl,
         },
         {
           property: `og:image`,
@@ -73,18 +100,31 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
-          content: `長野県上田市にある一棟貸切り宿もりしま。一泊一組限定。キッチンがあります。宿泊以外のご利用にも柔軟に対応できます。庭にコンロがあるのでBBQも可能です。`,
+          content: metaDescription,
         },
         {
           name: `google-site-verification`,
-          content: `uEDc67CGca4iUBX820jiWmzsJP4kSdFZ8XX05pKmSIk`
-        }
-      ].concat(meta)}
-    />
+          content: `uEDc67CGca4iUBX820jiWmzsJP4kSdFZ8XX05pKmSIk`,
+        },
+      ]
+        .concat(
+          keywords.length > 0
+            ? {
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
+            : []
+        )
+        .concat(meta)}
+    >
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
+    </Helmet>
   )
 }
 
@@ -92,6 +132,7 @@ SEO.defaultProps = {
   lang: `ja`,
   meta: [],
   description: ``,
+  keywords: [],
 }
 
 SEO.propTypes = {

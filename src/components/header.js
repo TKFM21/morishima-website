@@ -10,6 +10,7 @@ const Header = ({ siteTitle }) => (
           height="40"
           border="0"
           src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+          alt="一棟貸切りの宿 もりしま 長野県上田市 LINE公式アカウント"
         />
       </a>
     </span>

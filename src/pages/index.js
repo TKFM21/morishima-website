@@ -5,15 +5,31 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Instagram from "../components/instagram"
-import LeafletMap from "../components/leafletMap"
+import GoogleMap from "../components/googleMap"
 import Footer from "../components/footer"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="一棟貸切り宿もりしま 長野県上田市" />
+      <SEO
+        title="一棟貸切りの宿 もりしま 長野県上田市"
+        keywords={[
+          `長野`,
+          `上田`,
+          `武石`,
+          `宿`,
+          `BBQ`,
+          `バーベキュー`,
+          `貸切り`,
+          `もりしま`,
+        ]}
+      />
       <section className="hero">
-        <Img fluid={data.top.childImageSharp.fluid} className="hero-image" />
+        <Img
+          fluid={data.top.childImageSharp.fluid}
+          className="hero-image"
+          alt="一棟貸切りの宿 もりしま 長野県上田市"
+        />
       </section>
       <section className="container">
         <h1 className="title">一棟貸し宿もりしま長野県上田市</h1>
@@ -22,20 +38,23 @@ const IndexPage = ({ data }) => {
           <br />
           一泊一組限定
           <br />
-          一棟貸切りの宿
+          平屋一棟貸切りの宿
         </span>
         <div className="gallery-grid">
           <Img
             fluid={data.bbq.childImageSharp.fluid}
             className="gallery-img1"
+            alt="一棟貸切りの宿 もりしま 長野県上田市BBQ"
           />
           <Img
             fluid={data.exterior.childImageSharp.fluid}
             className="gallery-img2"
+            alt="一棟貸切りの宿 もりしま 長野県上田市 外観"
           />
           <Img
             fluid={data.living.childImageSharp.fluid}
             className="gallery-img3"
+            alt="一棟貸切りの宿 もりしま 長野県上田市 リビング"
           />
         </div>
         <div className="about-grid">
@@ -53,13 +72,7 @@ const IndexPage = ({ data }) => {
       <section className="container">
         <Instagram />
       </section>
-      {typeof window !== "undefined" && (
-        <LeafletMap
-          position={[36.299465, 138.243906]} // Your Coordinates
-          zoom={10} // Zoom Level
-          markerText={"一棟貸しの宿 もりしま"} // Icon text.
-        />
-      )}
+      <GoogleMap />
       <Footer />
     </Layout>
   )
