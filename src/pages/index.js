@@ -39,6 +39,9 @@ const IndexPage = ({ data }) => {
           一泊一組限定
           <br />
           平屋一棟貸切りの宿
+          <br />
+          <br />
+          <strong>4/24~5/6まで休業しております。</strong>
         </span>
         <div className="gallery-grid">
           <Img
