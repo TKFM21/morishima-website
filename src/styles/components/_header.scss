@@ -12,6 +12,15 @@ header {
 
   span {
     font-size: $ms-size;
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 4px;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: rgb(202, 129, 32);
+    }
   }
   .line {
     display: none;

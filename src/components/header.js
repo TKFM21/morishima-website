@@ -1,9 +1,10 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <span>{siteTitle}</span>
+    <span><Link to={"/"} className="home-link">{siteTitle}</Link></span>
     <span className="line">
       <a href="https://lin.ee/miMytzL">
         <img

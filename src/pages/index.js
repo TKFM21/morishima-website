@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Instagram from "../components/instagram"
 import GoogleMap from "../components/googleMap"
@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="一棟貸切りの宿 もりしま 長野県上田市"
+        title="一棟貸切りの宿 もりしま  長野県上田市"
         keywords={[
           `長野`,
           `上田`,
@@ -20,6 +20,7 @@ const IndexPage = ({ data }) => {
           `宿`,
           `BBQ`,
           `バーベキュー`,
+          `BBQ`,
           `貸切り`,
           `もりしま`,
         ]}
@@ -39,9 +40,6 @@ const IndexPage = ({ data }) => {
           一泊一組限定
           <br />
           平屋一棟貸切りの宿
-          <br />
-          <br />
-          <strong>4/24~5/6まで休業しております。</strong>
         </span>
         <div className="gallery-grid">
           <Img
@@ -70,6 +68,7 @@ const IndexPage = ({ data }) => {
             柔軟に対応いたしますので、お気軽にお問合せください！！
           </p>
         </div>
+        <Link to={"/price/"} className="price-link">ご利用料金はこちらをご覧ください。</Link>
       </section>
       <div className="parallax"></div>
       <section className="container">
