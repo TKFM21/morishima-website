@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
@@ -22,7 +24,7 @@ const PricePage = ({ data }) => {
         ]}
       />
       <section className="price-container">
-        <span className="price-description">宿泊料金</span>
+        <span className="price-description">宿泊料金(1泊)</span>
         <table>
           <thead>
             <tr>
@@ -58,10 +60,12 @@ const PricePage = ({ data }) => {
           </tbody>
         </table>
         <p>※8名様以上をご希望の場合は、お問合せください。</p>
+        <p>※連泊の場合は2泊目以降は20%OFFとなります。</p>
         <p>※BBQコンロをご利用の場合は別途費用が発生します。</p>
         <p>※チェックインは15:00～20:00です。</p>
         <p>※チェックアウトは11:00です。</p>
         <p>※税込みの金額です。</p>
+        <Link to={`/cancel/`}>※キャンセル規定</Link>
 
         <span className="price-description">日帰り料金</span>
         <table>
@@ -121,7 +125,7 @@ const PricePage = ({ data }) => {
               <td>2,000円</td>
             </tr>
             <tr>
-              <td>炭（1kg）・着火剤・網・トング</td>
+              <td>炭（1kg）・着火剤・網・鉄板・うちわ・トング</td>
               <td>1,000円</td>
             </tr>
             <tr>
