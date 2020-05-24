@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
-const PricePage = ({ data }) => {
+const CancelPage = ({ data }) => {
   return (
     <Layout>
       <SEO
@@ -61,4 +61,4 @@ const PricePage = ({ data }) => {
   )
 }
 
-export default PricePage
+export default CancelPage
