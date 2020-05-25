@@ -1,0 +1,37 @@
+.renpaku-container {
+  color: #333;
+  line-height: 1.5;
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+  }
+
+  .renpaku-description{
+    text-align: center;
+    font-size: $l-size;
+    padding: 80px 20px 40px;
+    color: #07c;
+    @media screen and (min-width: 768px) {
+      padding: 100px 120px 50px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 120px 140px 60px;
+    }
+  }
+
+  .renpaku-wrap {
+    margin-bottom: 14px;
+    .renpaku-subtitle {
+      color: #07c;
+    }
+    .renpaku-child {
+      display: block;
+      text-indent: 2em;
+    }
+  }
+
+}
