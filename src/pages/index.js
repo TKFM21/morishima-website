@@ -77,6 +77,24 @@ const IndexPage = ({ data }) => {
         <Instagram />
       </section>
       <GoogleMap />
+      <section className="index-tweet-container">
+        <blockquote className="twitter-tweet" data-theme="dark">
+          <p lang="ja" dir="ltr">
+            長野県上田市の武石地域で営業している宿です。
+            <br></br>一泊一組限定、平屋一棟を貸切にできます。食事の提供はできませんが、自由に使えるキッチンがあります。庭にはBBQコンロもあります😀
+            <br></br>宿泊以外にも時間貸しなどにも柔軟に対応できますので、お気軽にお問い合わせください。
+            <a href="https://twitter.com/hashtag/%E9%95%B7%E9%87%8E?src=hash&amp;ref_src=twsrc%5Etfw">#長野</a>
+            <a href="https://twitter.com/hashtag/%E4%B8%8A%E7%94%B0?src=hash&amp;ref_src=twsrc%5Etfw">#上田</a>
+            <a href="https://twitter.com/hashtag/%E6%AD%A6%E7%9F%B3?src=hash&amp;ref_src=twsrc%5Etfw">#武石</a>
+            <a href="https://twitter.com/hashtag/%E5%AE%BF?src=hash&amp;ref_src=twsrc%5Etfw">#宿</a>
+          </p>
+          &mdash; 一棟貸し宿もりしま@長野県上田市 (@morishima1_2020)
+          <a href="https://twitter.com/morishima1_2020/status/1231130744669401089?ref_src=twsrc%5Etfw">February 22, 2020</a>
+        </blockquote>
+      </section>
+      <section className="index-tweet-timeline">
+        <a className="twitter-timeline" data-lang="ja" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/morishima1_2020?ref_src=twsrc%5Etfw">Tweets by morishima1_2020</a>
+      </section>
       <Footer />
     </Layout>
   )
