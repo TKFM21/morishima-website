@@ -69,6 +69,7 @@ const IndexPage = ({ data }) => {
           </p>
         </div>
         <Link to={"/price/"} className="price-link">ご利用料金はこちらをご覧ください。</Link>
+        <Link to={"/room/"} className="price-link">お部屋と設備のご案内</Link>
         <Link to={"/rule/"} className="price-link">宿泊約款と利用規則</Link>
       </section>
       <div className="parallax"></div>
