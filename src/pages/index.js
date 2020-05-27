@@ -77,6 +77,11 @@ const IndexPage = ({ data }) => {
         <Instagram />
       </section>
       <GoogleMap />
+      <section className="youtube-access">
+        <div className="youtube-wrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WvJGikkdsG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
       <section className="index-tweet-container">
         <blockquote className="twitter-tweet" data-theme="dark">
           <p lang="ja" dir="ltr">
