@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Instagram from "../components/instagram"
+// import Instagram from "../components/instagram"
 import GoogleMap from "../components/googleMap"
 import Footer from "../components/footer"
 
@@ -73,9 +73,9 @@ const IndexPage = ({ data }) => {
         <Link to={"/rule/"} className="price-link">宿泊約款と利用規則</Link>
       </section>
       <div className="parallax"></div>
-      <section className="container">
+      {/* <section className="container">
         <Instagram />
-      </section>
+      </section> */}
       <GoogleMap />
       <section className="youtube-access">
         <div className="youtube-wrap">
