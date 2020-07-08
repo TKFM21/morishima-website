@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => {
             <br></br>
             宿泊だけでなく、お打合せや教室などの時間単位でのご利用も可能です。
             <br></br>
-            柔軟に対応いたしますので、お気軽にお問合せください！！
+            柔軟に対応いたしますので、お気軽に<a href="https://forms.gle/G7YkGwHAQPzbdhrr8">お問合せ</a>ください！！
           </p>
         </div>
         <Link to={"/price/"} className="price-link">ご利用料金はこちらをご覧ください。</Link>
