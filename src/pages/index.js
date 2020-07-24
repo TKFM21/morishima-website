@@ -68,6 +68,9 @@ const IndexPage = ({ data }) => {
             柔軟に対応いたしますので、お気軽に<a href="https://forms.gle/G7YkGwHAQPzbdhrr8">お問合せ</a>ください！
           </p>
         </div>
+        <hr/>
+        <div className="campaign">2020年8月7日～2021年1月末（予定）：上田市民向けキャンペーン<a href="https://forms.gle/qmzHUFJ2D12WNhANA">詳細</a></div>
+        <hr/>
         <Link to={"/price/"} className="price-link">ご利用料金はこちらをご覧ください。</Link>
         <Link to={"/room/"} className="price-link">お部屋と設備のご案内</Link>
         <Link to={"/rule/"} className="price-link">宿泊約款と利用規則</Link>
