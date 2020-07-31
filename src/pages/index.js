@@ -74,6 +74,7 @@ const IndexPage = ({ data }) => {
         <Link to={"/price/"} className="price-link">ご利用料金はこちらをご覧ください。</Link>
         <Link to={"/room/"} className="price-link">お部屋と設備のご案内</Link>
         <Link to={"/rule/"} className="price-link">宿泊約款と利用規則</Link>
+        <p className="reservation">ご予約は<a href="https://forms.gle/tmqWVA1WjK4MMMvf9">こちら</a>から</p>
       </section>
       <div className="parallax"></div>
       {/* <section className="container">
