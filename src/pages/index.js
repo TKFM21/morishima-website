@@ -154,6 +154,9 @@ const IndexPage = ({ data }) => {
           Tweets by morishima1_2020
         </a>
       </section>
+      <section className="google-my-map">
+        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1EDB079Oyf1-cS8wDJGKgpLFG7kbWBWQe"></iframe>
+      </section>
       <Footer />
     </Layout>
   )

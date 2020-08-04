@@ -178,3 +178,14 @@ h2 {
     text-align: center;
   }
 }
+
+.google-my-map {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  iframe {
+    height: 480px;
+  }
+}
