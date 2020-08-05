@@ -157,6 +157,10 @@ const IndexPage = ({ data }) => {
       <section className="google-my-map">
         <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1EDB079Oyf1-cS8wDJGKgpLFG7kbWBWQe"></iframe>
       </section>
+      <section className="google-my-map">
+        <h3>ディスカバー信州観光クーポン利用可能店舗マップ</h3>
+        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1h5Hb77Vp6rJaqWJfyVemL51Ze89st_HA"></iframe>
+      </section>
       <Footer />
     </Layout>
   )
