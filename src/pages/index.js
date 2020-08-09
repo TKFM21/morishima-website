@@ -70,10 +70,10 @@ const IndexPage = ({ data }) => {
           </p>
         </div>
         <hr />
-        <div className="campaign">
+        {/* <div className="campaign">
           2020年8月7日～2021年1月末（予定）：上田市民向けキャンペーン
           <a href="https://forms.gle/qmzHUFJ2D12WNhANA">詳細</a>
-        </div>
+        </div> */}
         <hr />
         <Link to={"/campaign202008/"} className="price-link">
           宿泊料金半額！！地域限定キャンペーン
