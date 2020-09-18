@@ -69,7 +69,6 @@ const IndexPage = ({ data }) => {
             <a href="https://forms.gle/G7YkGwHAQPzbdhrr8">お問合せ</a>ください！
           </p>
         </div>
-        <hr />
         {/* <div className="campaign">
           2020年8月7日～2021年1月末（予定）：上田市民向けキャンペーン
           <a href="https://forms.gle/qmzHUFJ2D12WNhANA">詳細</a>
@@ -79,9 +78,9 @@ const IndexPage = ({ data }) => {
           宿泊料金半額！！地域限定キャンペーン
         </Link>
         <div className="campaign202008">
-          <p>ご利用者様が下記住所の場合に適用できるキャンペーンです。</p>
+          <p>ご利用者様が下記の場合に適用できるキャンペーンです。</p>
           <p>
-            【長野県、新潟県、福井県、青森県、岩手県、宮城県、秋田県、山形県、福島県】
+            【東京都、神奈川県、大阪府以外にお住いの方】
           </p>
         </div>
         <hr />
