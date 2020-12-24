@@ -23,6 +23,7 @@ const IndexPage = ({ data }) => {
           `BBQ`,
           `貸切り`,
           `もりしま`,
+          `貸し別荘`,
         ]}
       />
       <section className="hero">
@@ -80,7 +81,7 @@ const IndexPage = ({ data }) => {
         <div className="campaign202008">
           <p>ご利用者様が下記の場合に適用できるキャンペーンです。</p>
           <p>
-            【東京都、神奈川県、大阪府以外にお住いの方】
+            【長野県にお住いの方】
           </p>
         </div>
         <hr />

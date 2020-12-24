@@ -65,7 +65,7 @@ const PricePage = ({ data }) => {
         <p>※税込みの金額です。</p>
         <Link to={`/cancel/`}>※キャンセル規定</Link>
 
-        <span className="price-description">日帰り料金</span>
+        {/* <span className="price-description">日帰り料金</span>
         <table>
           <thead>
             <tr>
@@ -103,7 +103,7 @@ const PricePage = ({ data }) => {
         <p>※8名様以上をご希望の場合は、お問合せください。</p>
         <p>※BBQコンロをご利用の場合は別途費用が発生します。</p>
         <p>※ご利用時間は10:00～15:00です。</p>
-        <p>※税込みの金額です。</p>
+        <p>※税込みの金額です。</p> */}
 
         <span className="price-description">レンタル</span>
         <table>
