@@ -30,7 +30,7 @@ const RenpakuPage = ({ data }) => {
           </dl>
         </div>
 
-        <div className="renpaku-wrap">
+        {/* <div className="renpaku-wrap">
           <h3 className="renpaku-subtitle">宿泊料金（連泊）</h3>
           <dl>
             <dd>2泊目以降の宿泊料金は1泊目料金の20%OFFとなります。
@@ -38,7 +38,7 @@ const RenpakuPage = ({ data }) => {
               ただし、GW（5/2～5/6）・夏休み（8月）・年末年始（12/30～1/3）の期間は連泊割引の適用外となります。
             </dd>
           </dl>
-        </div>
+        </div> */}
 
         <div className="renpaku-wrap">
           <h3 className="renpaku-subtitle">清掃（連泊）</h3>
