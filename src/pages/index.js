@@ -41,10 +41,12 @@ const IndexPage = ({ data }) => {
           一泊一組限定
           <br />
           平屋一棟貸切りの宿
+          <br /><br />
+          <a href="https://forms.gle/G7YkGwHAQPzbdhrr8">お問い合わせはこちら</a>
         </span>
         <div className="gallery-grid">
           <Img
-            fluid={data.bbq.childImageSharp.fluid}
+            fluid={data.anshin_sengen.childImageSharp.fluid}
             className="gallery-img1"
             alt="一棟貸切りの宿 もりしま 長野県上田市BBQ"
           />
@@ -60,12 +62,12 @@ const IndexPage = ({ data }) => {
           />
         </div>
         <div className="about-grid">
-          <h2>快適なご滞在をサポート</h2>
+          {/* <h2>快適なご滞在をサポート</h2> */}
           <p>
             家具・家電など一式が揃っていますので、ご自由にお使いいただけます。
-            <br></br>
+            <br />
             宿泊だけでなく、お打合せや教室などの時間単位でのご利用も可能です。
-            <br></br>
+            <br />
             柔軟に対応いたしますので、お気軽に
             <a href="https://forms.gle/G7YkGwHAQPzbdhrr8">お問合せ</a>ください！
           </p>
@@ -74,17 +76,17 @@ const IndexPage = ({ data }) => {
           2020年8月7日～2021年1月末（予定）：上田市民向けキャンペーン
           <a href="https://forms.gle/qmzHUFJ2D12WNhANA">詳細</a>
         </div> */}
-        {/* <hr />
+        <hr />
         <Link to={"/campaign202008/"} className="price-link">
           宿泊料金半額！！地域限定キャンペーン
         </Link>
         <div className="campaign202008">
           <p>ご利用者様が下記の場合に適用できるキャンペーンです。</p>
           <p>
-            【長野県にお住いの方】
+            【長野県にお住いで同居のご家族】
           </p>
         </div>
-        <hr /> */}
+        <hr />
         <Link to={"/price/"} className="price-link">
           ご利用料金はこちらをご覧ください。
         </Link>
@@ -184,7 +186,7 @@ export const pageQuery = graphql`
     living: file(relativePath: { eq: "living.jpg" }) {
       ...fluidImage
     }
-    bbq: file(relativePath: { eq: "bbq.jpg" }) {
+    anshin_sengen: file(relativePath: { eq: "anshin_sengen.jpg" }) {
       ...fluidImage
     }
     exterior: file(relativePath: { eq: "exterior.jpg" }) {

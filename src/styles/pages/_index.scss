@@ -84,8 +84,9 @@ h2 {
     }
   }
   .about-grid {
-    margin-top: 60px;
-    display: grid;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
@@ -97,7 +98,7 @@ h2 {
       grid-template-areas:
         "h2 ."
         ". p";
-      margin-top: 80px;
+      margin-top: 24px;
     }
     h2 {
       grid-area: h2;
