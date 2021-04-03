@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
           2020年8月7日～2021年1月末（予定）：上田市民向けキャンペーン
           <a href="https://forms.gle/qmzHUFJ2D12WNhANA">詳細</a>
         </div> */}
-        <hr />
+        {/* <hr />
         <Link to={"/campaign202008/"} className="price-link">
           宿泊料金半額！！地域限定キャンペーン
         </Link>
@@ -86,7 +86,7 @@ const IndexPage = ({ data }) => {
             【長野県にお住いで同居のご家族】
           </p>
         </div>
-        <hr />
+        <hr /> */}
         <Link to={"/price/"} className="price-link">
           ご利用料金はこちらをご覧ください。
         </Link>
@@ -159,10 +159,10 @@ const IndexPage = ({ data }) => {
       <section className="google-my-map">
         <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1EDB079Oyf1-cS8wDJGKgpLFG7kbWBWQe"></iframe>
       </section>
-      <section className="google-my-map">
+      {/* <section className="google-my-map">
         <h3>ディスカバー信州観光クーポン利用可能店舗マップ</h3>
         <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1h5Hb77Vp6rJaqWJfyVemL51Ze89st_HA"></iframe>
-      </section>
+      </section> */}
       <Footer />
     </Layout>
   )
